@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="141317" started-at="2017-07-21T11:55:45Z" finished-at="2017-07-21T11:58:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="141317" started-at="2017-07-21T11:55:45Z" finished-at="2017-07-21T11:58:06Z">
+      <class name="modules_automation.Register">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:modules_automation.Register@c038203]" name="startUp" is-config="true" duration-ms="73296" started-at="2017-07-21T17:25:45Z" finished-at="2017-07-21T17:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="clickStartButton()[pri:0, instance:modules_automation.Register@c038203]" name="clickStartButton" duration-ms="1184" started-at="2017-07-21T17:26:58Z" finished-at="2017-07-21T17:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickStartButton -->
+        <test-method status="PASS" signature="clickRegister()[pri:1, instance:modules_automation.Register@c038203]" name="clickRegister" duration-ms="58968" started-at="2017-07-21T17:26:59Z" finished-at="2017-07-21T17:27:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickRegister -->
+        <test-method status="PASS" signature="clickBusinessType()[pri:2, instance:modules_automation.Register@c038203]" name="clickBusinessType" duration-ms="291" started-at="2017-07-21T17:27:58Z" finished-at="2017-07-21T17:27:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickBusinessType -->
+        <test-method status="PASS" signature="clickNextButtonAfterSelectingBuisnessType()[pri:3, instance:modules_automation.Register@c038203]" name="clickNextButtonAfterSelectingBuisnessType" duration-ms="282" started-at="2017-07-21T17:27:59Z" finished-at="2017-07-21T17:27:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNextButtonAfterSelectingBuisnessType -->
+        <test-method status="PASS" signature="clickNumberofStores()[pri:4, instance:modules_automation.Register@c038203]" name="clickNumberofStores" duration-ms="810" started-at="2017-07-21T17:27:59Z" finished-at="2017-07-21T17:28:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNumberofStores -->
+        <test-method status="PASS" signature="doRegister()[pri:5, instance:modules_automation.Register@c038203]" name="doRegister" duration-ms="692" started-at="2017-07-21T17:28:00Z" finished-at="2017-07-21T17:28:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doRegister -->
+        <test-method status="PASS" signature="clickregister()[pri:6, instance:modules_automation.Register@c038203]" name="clickregister" duration-ms="5760" started-at="2017-07-21T17:28:00Z" finished-at="2017-07-21T17:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickregister -->
+      </class> <!-- modules_automation.Register -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
