@@ -12,12 +12,25 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
+import modules_automation.Register;
+
 public class Home_Pom {
 	public static WebElement element;
 	public static WebDriver driver;
 	public static Properties properties;
 
+	/* Reporting variables */
+	public static ExtentReports extent;
+	public static ExtentTest extentTest;
+	String testingReportFile = System.getProperty("user.dir") + "\\TestignStatusReport.html";
+
 	public Home_Pom() throws IOException {
+		extent = new ExtentReports(testingReportFile, false);
+		extentTest = extent.startTest("Launching application in the browser ", "Opening!");
 		properties = new Properties();
 		InputStream inStream = new FileInputStream("Properties.properties");
 		properties.load(inStream);
@@ -28,7 +41,11 @@ public class Home_Pom {
 		driver = new FirefoxDriver(handlSSLErr);
 		driver.manage().window().maximize();
 		driver.get(properties.getProperty("URL"));
-//		Register.conditionalWait(driver, "Navigated to the URL");
+		extentTest.log(LogStatus.INFO, "-----> Browser Launched");
+		
+		extent.endTest(Home_Pom.extentTest);
+		extent.flush();
+		 Register.conditionalWait(driver, "Navigated to the URL");
 	}
 
 	public static WebElement startButton() {

@@ -3,8 +3,16 @@ package modules_automation;
 import java.io.IOException;
 
 import org.apache.commons.logging.Log;
+import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.LogStatus;
 
 import modules_pom.Home_Pom;
 import modules_pom.Login_Pom;
@@ -29,74 +37,171 @@ public class Register {
 
 	@Test(priority = 0)
 	public void clickStartButton() {
-//		conditionalWait(Home_Pom.driver, "startUp");
-		Home_Pom.startButton().click();
-		System.out.println("---------> Start Button clicked");
+		try {
+			Home_Pom.extentTest = Home_Pom.extent.startTest("In click Start button test", "");
+			conditionalWait(Home_Pom.driver, "startUp");
+			Home_Pom.startButton().click();
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Start button clicked");
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		} catch (Exception exception) {
+			Home_Pom.extentTest.log(LogStatus.ERROR, exception.getMessage());
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		}
+
 	}
 
 	@Test(priority = 1)
 	public void clickRegister() {
-//		conditionalWait(Home_Pom.driver, "clickStartButton");
-		loginpom.clickRegister(Home_Pom.driver).click();
-		System.out.println("---------> Register as a New User clicked");
+		try {
+			Home_Pom.extentTest = Home_Pom.extent.startTest("In click Register button test", "");
+			conditionalWait(Home_Pom.driver, "clickStartButton");
+			loginpom.clickRegister(Home_Pom.driver).click();
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->register as a new user button clicked");
+
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		} catch (Exception exception) {
+			Home_Pom.extentTest.log(LogStatus.ERROR, exception.getMessage());
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		}
 	}
 
 	@Test(priority = 2)
 	public void clickBusinessType() {
-//		conditionalWait(Home_Pom.driver, "clickRegister");
-		registerPOS_Pom = new RegisterPOS_Pom();
-		registerPOS_Pom.clickFashionnAperal().click();
-		System.out.println("---------> clickBusinessType clicked");
+		try {
+			Home_Pom.extentTest = Home_Pom.extent.startTest("In click of Business Type test", "");
+			conditionalWait(Home_Pom.driver, "clickRegister");
+			registerPOS_Pom = new RegisterPOS_Pom();
+			registerPOS_Pom.clickFashionnAperal().click();
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Business type clicked");
+
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		} catch (Exception exception) {
+			Home_Pom.extentTest.log(LogStatus.ERROR, exception.getMessage());
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		}
 	}
 
 	@Test(priority = 3)
 	public void clickNextButtonAfterSelectingBuisnessType() {
-//		conditionalWait(Home_Pom.driver, "clickBusinessType");
-		registerPOS_Pom = new RegisterPOS_Pom();
-		registerPOS_Pom.clicknextButtonAfterSelectingBuisnessType().click();
-		System.out.println("---------> Next Button After Selecting Buisness Type clicked");
+		try {
+			Home_Pom.extentTest = Home_Pom.extent.startTest("In click of Button after selecting business type", "");
+			conditionalWait(Home_Pom.driver, "clickBusinessType");
+			registerPOS_Pom = new RegisterPOS_Pom();
+			registerPOS_Pom.clicknextButtonAfterSelectingBuisnessType().click();
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Button after selecting business type clicked");
+
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		} catch (Exception exception) {
+			Home_Pom.extentTest.log(LogStatus.ERROR, exception.getMessage());
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		}
+
 	}
 
 	@Test(priority = 4)
 	public void clickNumberofStores() {
-//		conditionalWait(Home_Pom.driver, "clickNextButtonAfterSelectingBuisnessType");
-		StoresNumber_Pom storesNumber_Pom = new StoresNumber_Pom();
-		storesNumber_Pom.clickStoreNumberTile(Home_Pom.properties.getProperty("storeNumber")).click();
-		System.out.println("---------> Number of Stores clicked");
-		registerPOS_Pom = new RegisterPOS_Pom();
-		registerPOS_Pom.clicknextButtonAfterSelectingBuisnessType().click();
+		try {
+			Home_Pom.extentTest = Home_Pom.extent.startTest("In click of Number of Stores", "");
+			conditionalWait(Home_Pom.driver, "clickNextButtonAfterSelectingBuisnessType");
+			StoresNumber_Pom storesNumber_Pom = new StoresNumber_Pom();
+			storesNumber_Pom.clickStoreNumberTile(Home_Pom.properties.getProperty("storeNumber")).click();
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Number of Stores tile clicked");
+
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		} catch (Exception exception) {
+			Home_Pom.extentTest.log(LogStatus.ERROR, exception.getMessage());
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		}
+
 	}
 
 	@Test(priority = 5)
 	public void doRegister() {
-//		conditionalWait(Home_Pom.driver, "clickNumberofStores");
-		register_pom = new Register_Pom();
-		register_pom.clickFieldName(Home_Pom.properties.getProperty("businessType")).sendKeys("Fashion and Apparel"); // Business
-		// Type
-		register_pom.clickFieldName(Home_Pom.properties.getProperty("firstName")).sendKeys("Test"); // First Name
-		register_pom.clickFieldName(Home_Pom.properties.getProperty("lastName")).sendKeys("User3"); // Last Name
-		register_pom.clickFieldName(Home_Pom.properties.getProperty("email")).sendKeys("testuser@yopmail.com"); // Email
-		register_pom.clickFieldName(Home_Pom.properties.getProperty("phone")).sendKeys("3333333333"); // Phone
-		register_pom.clickFieldName(Home_Pom.properties.getProperty("city")).sendKeys("City3"); // City
-		register_pom.clickFieldName(Home_Pom.properties.getProperty("country")).sendKeys("Country3"); // Country
-		register_pom.clickFieldName(Home_Pom.properties.getProperty("password")).sendKeys("testuser3"); // Password
-		register_pom.clickFieldName(Home_Pom.properties.getProperty("confirmPassword")).sendKeys("testuser3"); // Confirm
-																												// Password
+		try {
+			Home_Pom.extentTest = Home_Pom.extent.startTest("In Registration test", "");
+			conditionalWait(Home_Pom.driver, "clickNumberofStores");
+			register_pom = new Register_Pom();
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("businessType"))
+					.sendKeys("Fashion and Apparel"); // Business
+			// Type
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Entered business type");
+
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("firstName")).sendKeys("Test"); // First Name
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Entered first name");
+
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("lastName")).sendKeys("User4"); // Last Name
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Entered last name");
+
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("email")).sendKeys("testuser@yopmail.com"); // Email
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Entered email");
+
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("phone")).sendKeys("4444444444"); // Phone
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Entered phone number");
+
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("city")).sendKeys("City4"); // City
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Entered city");
+
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("country")).sendKeys("Country4"); // Country
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Entered country");
+
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("password")).sendKeys("testuser4"); // Password
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Entered password");
+
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("confirmPassword")).sendKeys("testuser4"); // Confirm
+																													// Password
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Entered confirm password");
+
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->Entrered all the fields");
+
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+
+		} catch (Exception exception) {
+			Home_Pom.extentTest.log(LogStatus.ERROR, exception.getMessage());
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		}
+
 	}
 
 	@Test(priority = 6)
 	public void clickregister() {
-//		conditionalWait(Home_Pom.driver, "doRegister");
-		register_pom = new Register_Pom();
-		register_pom.clickRegisterbutton(Home_Pom.properties.getProperty("registerButton")).click();
+		try {
+			Home_Pom.extentTest = Home_Pom.extent.startTest("In click of registration button", "");
+			conditionalWait(Home_Pom.driver, "doRegister");
+			register_pom = new Register_Pom();
+			register_pom.clickRegisterbutton(Home_Pom.properties.getProperty("registerButton")).click();
+			Home_Pom.extentTest.log(LogStatus.INFO, "----->registration button clicked");
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		} catch (Exception exception) {
+			Home_Pom.extentTest.log(LogStatus.ERROR, exception.getMessage());
+			Home_Pom.extent.endTest(Home_Pom.extentTest);
+			Home_Pom.extent.flush();
+		}
 	}
 
-	/*public static void conditionalWait(WebDriver driver, String testName) {
+	public static void conditionalWait(WebDriver driver, String testName) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 30);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("html")));
 		} catch (TimeoutException exception) {
 			System.out.println("--------> Timeout occurs in " + testName);
 		}
-	}*/
+	}
+
+	@AfterClass
+	public void afterClass() {
+		Home_Pom.extent.close();
+	}
 }
