@@ -26,7 +26,7 @@ public class Home_Pom {
 	/* Reporting variables */
 	public static ExtentReports extent;
 	public static ExtentTest extentTest;
-	String testingReportFile = System.getProperty("user.dir") + "\\TestignStatusReport.html";
+	String testingReportFile = System.getProperty("user.dir") + "\\Report\\TestignStatusReport.html";
 
 	public Home_Pom() throws IOException {
 		extent = new ExtentReports(testingReportFile, false);
@@ -39,13 +39,18 @@ public class Home_Pom {
 		DesiredCapabilities handlSSLErr = DesiredCapabilities.firefox();
 		handlSSLErr.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		driver = new FirefoxDriver(handlSSLErr);
-		driver.manage().window().maximize();
 		driver.get(properties.getProperty("URL"));
+		driver.manage().window().maximize();
+
+		if (driver.getTitle().equals("502 Bad Gateway")) {
+			System.exit(0);
+		}
 		extentTest.log(LogStatus.INFO, "-----> Browser Launched");
-		
+
 		extent.endTest(Home_Pom.extentTest);
 		extent.flush();
-		 Register.conditionalWait(driver, "Navigated to the URL");
+		// Register.conditionalWait(driver, "Navigated to the URL");
+		Register.checkIfPageIsReady(Home_Pom.driver, "Loading the URL");
 	}
 
 	public static WebElement startButton() {
