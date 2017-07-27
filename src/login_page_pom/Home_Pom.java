@@ -1,4 +1,4 @@
-package modules_pom;
+package login_page_pom;
 
 import java.io.FileInputStream;
 import java.io.IOException;

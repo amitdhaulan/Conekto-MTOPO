@@ -1,7 +1,9 @@
-package modules_pom;
+package modules_pom_registration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
+import login_page_pom.Home_Pom;
 
 public class RegisterPOS_Pom {
 	public WebElement clickFashionnAperal(String businessType) {

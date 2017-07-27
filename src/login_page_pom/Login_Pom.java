@@ -1,10 +1,8 @@
-package modules_pom;
+package login_page_pom;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -12,12 +10,7 @@ public class Login_Pom {
 	Home_Pom homePom;
 
 	public Login_Pom() throws IOException {
-		try {
-			homePom = new Home_Pom();
-			Keys.chord(Keys.CONTROL, Keys.ADD);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
+		homePom = new Home_Pom();
 	}
 
 	public WebElement userName(WebDriver driver) {
@@ -27,12 +20,8 @@ public class Login_Pom {
 	public WebElement password(WebDriver driver) {
 		return driver.findElement(By.id(Home_Pom.properties.getProperty("password")));
 	}
-	
+
 	public WebElement logIn(WebDriver driver) {
 		return driver.findElement(By.id(Home_Pom.properties.getProperty("password")));
-	}
-
-	public WebElement clickRegister(WebDriver driver) {
-		return driver.findElement(By.partialLinkText(Home_Pom.properties.getProperty("registerNewUser")));
 	}
 }

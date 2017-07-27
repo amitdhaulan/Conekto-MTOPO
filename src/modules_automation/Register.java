@@ -1,8 +1,8 @@
 package modules_automation;
 
+import java.awt.AWTException;
 import java.io.IOException;
 
-import org.apache.commons.logging.Log;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.sikuli.script.FindFailed;
@@ -12,25 +12,29 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import modules_pom.Home_Pom;
-import modules_pom.Login_Pom;
-import modules_pom.RegisterPOS_Pom;
-import modules_pom.Register_Pom;
-import modules_pom.StoresNumber_Pom;
+import login_page_pom.Home_Pom;
+import login_page_pom.Login_Pom;
+import modules_pom_registration.RegisterPOS_Pom;
+import modules_pom_registration.Register_Pom;
+import modules_pom_registration.StoresNumber_Pom;
 
 public class Register {
-	Log log;
 	Login_Pom loginpom;
 	RegisterPOS_Pom registerPOS_Pom;
 	Register_Pom register_pom;
 
 	@BeforeTest
-	public void startUp() throws FindFailed, InterruptedException {
+	public void startUp() throws FindFailed, InterruptedException, AWTException {
 		try {
 			loginpom = new Login_Pom();
+			
+			registerPOS_Pom = new RegisterPOS_Pom();
+			register_pom = new Register_Pom();
 			if (Home_Pom.properties.getProperty("sikuli").equals("true")) {
 				Sikuli_Automation automation = new Sikuli_Automation();
 				automation.automationcript();
+				doRegister();
+				clickRegisterButton();
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -63,7 +67,7 @@ public class Register {
 			Home_Pom.extentTest = Home_Pom.extent.startTest("In click Register button test", "");
 			// conditionalWait(Home_Pom.driver, "clickStartButton");
 			checkIfPageIsReady(Home_Pom.driver, "Click Register");
-			loginpom.clickRegister(Home_Pom.driver).click();
+			register_pom.clickRegister(Home_Pom.driver).click();
 			Home_Pom.extentTest.log(LogStatus.INFO, "Register as a new user button clicked");
 
 			Home_Pom.extent.endTest(Home_Pom.extentTest);
@@ -96,7 +100,6 @@ public class Register {
 	}
 
 	public void clickBusinessTypeTile(String businessType) {
-		registerPOS_Pom = new RegisterPOS_Pom();
 		registerPOS_Pom.clickFashionnAperal(Home_Pom.properties.getProperty(businessType)).click();
 	}
 
@@ -106,7 +109,6 @@ public class Register {
 			Home_Pom.extentTest = Home_Pom.extent.startTest("In click of Button after selecting business type", "");
 			// conditionalWait(Home_Pom.driver, "clickBusinessType");
 			checkIfPageIsReady(Home_Pom.driver, "Click next button");
-			registerPOS_Pom = new RegisterPOS_Pom();
 			registerPOS_Pom.clicknextButtonAfterSelectingBuisnessType().click();
 			Home_Pom.extentTest.log(LogStatus.INFO, "Button after selecting business type clicked");
 
@@ -152,7 +154,6 @@ public class Register {
 			Home_Pom.extentTest = Home_Pom.extent.startTest("In Registration test", "");
 			// conditionalWait(Home_Pom.driver, "clickNumberofStores");
 			checkIfPageIsReady(Home_Pom.driver, "Doing registeration");
-			register_pom = new Register_Pom();
 			register_pom.clickFieldName(Home_Pom.properties.getProperty("businessType"))
 					.sendKeys("Fashion and Apparel"); // Business
 			// Type
@@ -198,12 +199,11 @@ public class Register {
 	}
 
 	@Test(priority = 6)
-	public void clickregister() {
+	public void clickRegisterButton() {
 		try {
 			Home_Pom.extentTest = Home_Pom.extent.startTest("In click of registration button", "");
 			// conditionalWait(Home_Pom.driver, "doRegister");
 			checkIfPageIsReady(Home_Pom.driver, "Clicked register");
-			register_pom = new Register_Pom();
 			register_pom.clickRegisterbutton(Home_Pom.properties.getProperty("registerButton")).click();
 			Home_Pom.extentTest.log(LogStatus.INFO, "Registration button clicked");
 			Home_Pom.extent.endTest(Home_Pom.extentTest);
