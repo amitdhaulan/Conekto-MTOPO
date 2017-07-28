@@ -12,13 +12,15 @@ import login_page_pom.Home_Pom;
 
 public class Sikuli_Automation {
 	Robot robot;
-	Pattern start = new Pattern("D:\\amit\\Java_programs\\Conekto-MTOPO\\libs\\images\\start.png");
+	Pattern start = new Pattern("D:\\amit\\Java_programs\\Conekto-MTOPO\\libs\\images_for_sikuli\\start.png");
 	Pattern registerNewUser = new Pattern(
-			"D:\\amit\\Java_programs\\Conekto-MTOPO\\libs\\images\\registernewuser_button.png");
-	Pattern businessTypeTile = new Pattern("D:\\amit\\Java_programs\\Conekto-MTOPO\\libs\\images\\fashionNApparel.png");
-	Pattern nextButton = new Pattern("D:\\amit\\Java_programs\\Conekto-MTOPO\\libs\\images\\nextAfterBusinessType.png");
-	Pattern noOfStores = new Pattern("D:\\amit\\Java_programs\\Conekto-MTOPO\\libs\\images\\noOfStores.png");
-	Pattern register = new Pattern("D:\\amit\\Java_programs\\Conekto-MTOPO\\libs\\images\\register.png");
+			"D:\\amit\\Java_programs\\Conekto-MTOPO\\libs\\images_for_sikuli\\registernewuser_button.png");
+	Pattern businessTypeTile = new Pattern(
+			"D:\\amit\\Java_programs\\Conekto-MTOPO\\libs\\images_for_sikuli\\fashionNApparel.png");
+	Pattern nextButton = new Pattern(
+			"D:\\amit\\Java_programs\\Conekto-MTOPO\\libs\\images_for_sikuli\\nextAfterBusinessType.png");
+	Pattern noOfStores = new Pattern("D:\\amit\\Java_programs\\Conekto-MTOPO\\libs\\images_for_sikuli\\noOfStores.png");
+	Pattern register = new Pattern("D:\\amit\\Java_programs\\Conekto-MTOPO\\libs\\images_for_sikuli\\register.png");
 
 	public void automationcript() throws FindFailed, InterruptedException, AWTException {
 		robot = new Robot();
@@ -48,7 +50,10 @@ public class Sikuli_Automation {
 		robot.keyRelease(KeyEvent.VK_CONTROL);
 		Thread.sleep(10000);
 		Register.checkIfPageIsReady(Home_Pom.driver, "Next button clicked");
-		// screen.click(register);
+
+		Register.doRegister();
+
+		screen.click(register);
 		System.exit(0);
 	}
 

@@ -2,28 +2,49 @@
 <testng-results skipped="7" failed="0" ignored="0" total="7" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="82945" started-at="2017-07-27T10:43:10Z" finished-at="2017-07-27T10:44:33Z">
+  <suite name="Default suite" duration-ms="126565" started-at="2017-07-27T15:54:09Z" finished-at="2017-07-27T15:56:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="82945" started-at="2017-07-27T10:43:10Z" finished-at="2017-07-27T10:44:33Z">
+    <test name="Default test" duration-ms="126565" started-at="2017-07-27T15:54:09Z" finished-at="2017-07-27T15:56:15Z">
       <class name="modules_automation.Register">
-        <test-method status="FAIL" signature="startUp()[pri:0, instance:modules_automation.Register@5c3bd550]" name="startUp" is-config="true" duration-ms="82889" started-at="2017-07-27T16:13:10Z" finished-at="2017-07-27T16:14:33Z">
-          <exception class="org.sikuli.script.FindFailed">
+        <test-method status="FAIL" signature="startUp()[pri:0, instance:modules_automation.Register@5c3bd550]" name="startUp" is-config="true" duration-ms="126497" started-at="2017-07-27T21:24:09Z" finished-at="2017-07-27T21:26:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]]]>
+              <![CDATA[Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -50,27 +71,48 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.sikuli.script.FindFailed -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="SKIP" signature="clickStartButton()[pri:0, instance:modules_automation.Register@5c3bd550]" name="clickStartButton" duration-ms="0" started-at="2017-07-27T16:14:33Z" finished-at="2017-07-27T16:14:33Z">
-          <exception class="org.sikuli.script.FindFailed">
+        <test-method status="SKIP" signature="clickStartButton()[pri:0, instance:modules_automation.Register@5c3bd550]" name="clickStartButton" duration-ms="0" started-at="2017-07-27T21:26:15Z" finished-at="2017-07-27T21:26:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]]]>
+              <![CDATA[Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -97,27 +139,48 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.sikuli.script.FindFailed -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickStartButton -->
-        <test-method status="SKIP" signature="clickRegister()[pri:1, instance:modules_automation.Register@5c3bd550]" name="clickRegister" duration-ms="0" started-at="2017-07-27T16:14:33Z" finished-at="2017-07-27T16:14:33Z">
-          <exception class="org.sikuli.script.FindFailed">
+        <test-method status="SKIP" signature="clickRegister()[pri:1, instance:modules_automation.Register@5c3bd550]" name="clickRegister" duration-ms="0" started-at="2017-07-27T21:26:15Z" finished-at="2017-07-27T21:26:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]]]>
+              <![CDATA[Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -144,27 +207,48 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.sikuli.script.FindFailed -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickRegister -->
-        <test-method status="SKIP" signature="clickBusinessType_FashionNApparel()[pri:2, instance:modules_automation.Register@5c3bd550]" name="clickBusinessType_FashionNApparel" duration-ms="0" started-at="2017-07-27T16:14:33Z" finished-at="2017-07-27T16:14:33Z">
-          <exception class="org.sikuli.script.FindFailed">
+        <test-method status="SKIP" signature="clickBusinessType_FashionNApparel()[pri:2, instance:modules_automation.Register@5c3bd550]" name="clickBusinessType_FashionNApparel" duration-ms="0" started-at="2017-07-27T21:26:15Z" finished-at="2017-07-27T21:26:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]]]>
+              <![CDATA[Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -191,27 +275,48 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.sikuli.script.FindFailed -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickBusinessType_FashionNApparel -->
-        <test-method status="SKIP" signature="clickNextButtonAfterSelectingBuisnessType()[pri:3, instance:modules_automation.Register@5c3bd550]" name="clickNextButtonAfterSelectingBuisnessType" duration-ms="0" started-at="2017-07-27T16:14:33Z" finished-at="2017-07-27T16:14:33Z">
-          <exception class="org.sikuli.script.FindFailed">
+        <test-method status="SKIP" signature="clickNextButtonAfterSelectingBuisnessType()[pri:3, instance:modules_automation.Register@5c3bd550]" name="clickNextButtonAfterSelectingBuisnessType" duration-ms="0" started-at="2017-07-27T21:26:15Z" finished-at="2017-07-27T21:26:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]]]>
+              <![CDATA[Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -238,27 +343,48 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.sikuli.script.FindFailed -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickNextButtonAfterSelectingBuisnessType -->
-        <test-method status="SKIP" signature="clickNumberofStores()[pri:4, instance:modules_automation.Register@5c3bd550]" name="clickNumberofStores" duration-ms="0" started-at="2017-07-27T16:14:33Z" finished-at="2017-07-27T16:14:33Z">
-          <exception class="org.sikuli.script.FindFailed">
+        <test-method status="SKIP" signature="clickNumberofStores()[pri:4, instance:modules_automation.Register@5c3bd550]" name="clickNumberofStores" duration-ms="0" started-at="2017-07-27T21:26:15Z" finished-at="2017-07-27T21:26:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]]]>
+              <![CDATA[Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -285,27 +411,48 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.sikuli.script.FindFailed -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickNumberofStores -->
-        <test-method status="SKIP" signature="doRegister()[pri:5, instance:modules_automation.Register@5c3bd550]" name="doRegister" duration-ms="0" started-at="2017-07-27T16:14:33Z" finished-at="2017-07-27T16:14:33Z">
-          <exception class="org.sikuli.script.FindFailed">
+        <test-method status="SKIP" signature="doRegister()[pri:5, instance:modules_automation.Register@5c3bd550]" name="doRegister" duration-ms="0" started-at="2017-07-27T21:26:15Z" finished-at="2017-07-27T21:26:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]]]>
+              <![CDATA[Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -332,27 +479,48 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.sikuli.script.FindFailed -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doRegister -->
-        <test-method status="SKIP" signature="clickRegisterButton()[pri:6, instance:modules_automation.Register@5c3bd550]" name="clickRegisterButton" duration-ms="0" started-at="2017-07-27T16:14:33Z" finished-at="2017-07-27T16:14:33Z">
-          <exception class="org.sikuli.script.FindFailed">
+        <test-method status="SKIP" signature="clickRegisterButton()[pri:6, instance:modules_automation.Register@5c3bd550]" name="clickRegisterButton" duration-ms="0" started-at="2017-07-27T21:26:15Z" finished-at="2017-07-27T21:26:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]]]>
+              <![CDATA[Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'CHETUIWK1317', ip: '169.254.179.193', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -379,11 +547,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.sikuli.script.FindFailed -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickRegisterButton -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:modules_automation.Register@5c3bd550]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-07-27T16:14:33Z" finished-at="2017-07-27T16:14:33Z">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:modules_automation.Register@5c3bd550]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-07-27T21:26:15Z" finished-at="2017-07-27T21:26:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

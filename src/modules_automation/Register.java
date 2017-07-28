@@ -21,7 +21,7 @@ import modules_pom_registration.StoresNumber_Pom;
 public class Register {
 	Login_Pom loginpom;
 	RegisterPOS_Pom registerPOS_Pom;
-	Register_Pom register_pom;
+	static Register_Pom register_pom;
 
 	@BeforeTest
 	public void startUp() throws FindFailed, InterruptedException, AWTException {
@@ -33,8 +33,6 @@ public class Register {
 			if (Home_Pom.properties.getProperty("sikuli").equals("true")) {
 				Sikuli_Automation automation = new Sikuli_Automation();
 				automation.automationcript();
-				doRegister();
-				clickRegisterButton();
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -149,7 +147,7 @@ public class Register {
 	}
 
 	@Test(priority = 5)
-	public void doRegister() {
+	public static void doRegister() {
 		try {
 			Home_Pom.extentTest = Home_Pom.extent.startTest("In Registration test", "");
 			// conditionalWait(Home_Pom.driver, "clickNumberofStores");
@@ -199,7 +197,7 @@ public class Register {
 	}
 
 	@Test(priority = 6)
-	public void clickRegisterButton() {
+	public static void clickRegisterButton() {
 		try {
 			Home_Pom.extentTest = Home_Pom.extent.startTest("In click of registration button", "");
 			// conditionalWait(Home_Pom.driver, "doRegister");

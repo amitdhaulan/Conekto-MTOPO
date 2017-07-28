@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/7</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 27 16:13:10 IST 2017</td>
+<td>Started on:</td><td>Thu Jul 27 21:24:09 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>82 seconds (82945 ms)</td>
+<tr><td>Total time:</td><td>126 seconds (126565 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,31 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='modules_automation.Register.startUp()'><b>startUp</b><br>Test class: modules_automation.Register</td>
-<td><div><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -111,18 +125,32 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1311292881", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1311292881'><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1058822905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1058822905'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -148,7 +176,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>82</td>
+<td>126</td>
 <td>modules_automation.Register@5c3bd550</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -173,17 +201,31 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='modules_automation.Register.clickBusinessType_FashionNApparel()'><b>clickBusinessType_FashionNApparel</b><br>Test class: modules_automation.Register</td>
-<td><div><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -208,18 +250,32 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace338887787", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace338887787'><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace429058804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace429058804'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -249,17 +305,31 @@ function toggleAllBoxes() {
 <td>modules_automation.Register@5c3bd550</td></tr>
 <tr>
 <td title='modules_automation.Register.clickNextButtonAfterSelectingBuisnessType()'><b>clickNextButtonAfterSelectingBuisnessType</b><br>Test class: modules_automation.Register</td>
-<td><div><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -284,18 +354,32 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1061448687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1061448687'><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace259319861", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace259319861'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -325,17 +409,31 @@ function toggleAllBoxes() {
 <td>modules_automation.Register@5c3bd550</td></tr>
 <tr>
 <td title='modules_automation.Register.clickNumberofStores()'><b>clickNumberofStores</b><br>Test class: modules_automation.Register</td>
-<td><div><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -360,18 +458,32 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2015999862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2015999862'><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace52913970", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace52913970'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -401,17 +513,31 @@ function toggleAllBoxes() {
 <td>modules_automation.Register@5c3bd550</td></tr>
 <tr>
 <td title='modules_automation.Register.clickRegister()'><b>clickRegister</b><br>Test class: modules_automation.Register</td>
-<td><div><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -436,18 +562,32 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1800967368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1800967368'><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2109219177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2109219177'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -477,17 +617,31 @@ function toggleAllBoxes() {
 <td>modules_automation.Register@5c3bd550</td></tr>
 <tr>
 <td title='modules_automation.Register.clickRegisterButton()'><b>clickRegisterButton</b><br>Test class: modules_automation.Register</td>
-<td><div><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -512,18 +666,32 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1533330615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1533330615'><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace836969741", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace836969741'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -553,17 +721,31 @@ function toggleAllBoxes() {
 <td>modules_automation.Register@5c3bd550</td></tr>
 <tr>
 <td title='modules_automation.Register.clickStartButton()'><b>clickStartButton</b><br>Test class: modules_automation.Register</td>
-<td><div><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -588,18 +770,32 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace564817260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace564817260'><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace371976476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace371976476'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -629,17 +825,31 @@ function toggleAllBoxes() {
 <td>modules_automation.Register@5c3bd550</td></tr>
 <tr>
 <td title='modules_automation.Register.doRegister()'><b>doRegister</b><br>Test class: modules_automation.Register</td>
-<td><div><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -664,18 +874,32 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1467515503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1467515503'><pre>FindFailed: can not find P(D:/amit/Java_programs/Conekto-MTOPO/libs/images/start.png) S: 0.7 in S(0)[0,0 1366x768]
-  Line 2189, in file Region.java
-
-	at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
-	at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
-	at org.sikuli.script.Region.wait(Region.java:2546)
-	at org.sikuli.script.Region.find(Region.java:2205)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
-	at org.sikuli.script.Region.click(Region.java:3534)
-	at org.sikuli.script.Region.click(Region.java:3519)
-	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1059634518", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1059634518'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CHETUIWK1317&apos;, ip: &apos;169.254.179.193&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amitk2\AppData\Local\Temp\rust_mozprofile.tY9Shsc0uRUd, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0, platformVersion=6.1, moz:processID=8020.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ecc0ffd0-5798-4ed1-8a90-eb457cbd14fc
+*** Element info: {Using=xpath, value=Password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at modules_pom_registration.Register_Pom.clickFieldName(Register_Pom.java:13)
+	at modules_automation.Register.doRegister(Register.java:178)
+	at modules_automation.Sikuli_Automation.automationcript(Sikuli_Automation.java:54)
 	at modules_automation.Register.startUp(Register.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
