@@ -5,7 +5,7 @@ import java.io.IOException;
 
 import modules_automation.Register;
 
-public class CreatingRegisteredUsers {
+public class WritingRegisteredUsers {
 	// Delimiter used in CSV file
 	private static final String COMMA_DELIMITER = ",";
 	private static final String NEW_LINE_SEPARATOR = "\n";

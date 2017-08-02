@@ -18,7 +18,7 @@ import modules_pom_registration.RegisterPOS_Pom;
 import modules_pom_registration.Register_Pom;
 import modules_pom_registration.StoresNumber_Pom;
 import registered_user_r_w.GettingRegisteredUsers;
-import registered_user_r_w.CreatingRegisteredUsers;
+import registered_user_r_w.WritingRegisteredUsers;
 
 public class Register {
 	Login_Pom loginpom;
@@ -201,7 +201,7 @@ public class Register {
 			// String fileName = System.getProperty("user.home") + "/registeredUsers.csv";
 			String fileName = "D:\\amit\\Java_programs\\Conekto-MTOPO\\src\\registered_user_data\\registeredUsers.csv";
 
-			CreatingRegisteredUsers.writeCsvFile(fileName);
+			WritingRegisteredUsers.writeCsvFile(fileName);
 
 		} catch (Exception exception) {
 			Home_Pom.extentTest.log(LogStatus.ERROR, exception.getMessage());
