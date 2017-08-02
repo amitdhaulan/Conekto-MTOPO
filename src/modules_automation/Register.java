@@ -17,17 +17,21 @@ import login_page_pom.Login_Pom;
 import modules_pom_registration.RegisterPOS_Pom;
 import modules_pom_registration.Register_Pom;
 import modules_pom_registration.StoresNumber_Pom;
+import registered_user.GetUsers;
+import registered_user.Registered_Users;
 
 public class Register {
 	Login_Pom loginpom;
 	RegisterPOS_Pom registerPOS_Pom;
 	static Register_Pom register_pom;
 
+	public static GetUsers users;
+
 	@BeforeTest
 	public void startUp() throws FindFailed, InterruptedException, AWTException {
 		try {
 			loginpom = new Login_Pom();
-			
+
 			registerPOS_Pom = new RegisterPOS_Pom();
 			register_pom = new Register_Pom();
 			if (Home_Pom.properties.getProperty("sikuli").equals("true")) {
@@ -149,43 +153,55 @@ public class Register {
 	@Test(priority = 5)
 	public static void doRegister() {
 		try {
+			String email, password;
 			Home_Pom.extentTest = Home_Pom.extent.startTest("In Registration test", "");
 			// conditionalWait(Home_Pom.driver, "clickNumberofStores");
 			checkIfPageIsReady(Home_Pom.driver, "Doing registeration");
-			register_pom.clickFieldName(Home_Pom.properties.getProperty("businessType"))
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("r_businessType"))
 					.sendKeys("Fashion and Apparel"); // Business
 			// Type
 			Home_Pom.extentTest.log(LogStatus.INFO, "Entered business type");
 
-			register_pom.clickFieldName(Home_Pom.properties.getProperty("firstName")).sendKeys("Test"); // First Name
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("r_firstName")).sendKeys("Test"); // First Name
 			Home_Pom.extentTest.log(LogStatus.INFO, "Entered first name");
 
-			register_pom.clickFieldName(Home_Pom.properties.getProperty("lastName")).sendKeys("User5"); // Last Name5
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("r_lastName")).sendKeys("User9"); // Last Name5
 			Home_Pom.extentTest.log(LogStatus.INFO, "Entered last name");
 
-			register_pom.clickFieldName(Home_Pom.properties.getProperty("email")).sendKeys("testuser@yopmail.com"); // Email
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("r_email")).sendKeys("testuser@yopmail.com"); // Email
 			Home_Pom.extentTest.log(LogStatus.INFO, "Entered email");
+			email = "testuser@yopmail.com";
 
-			register_pom.clickFieldName(Home_Pom.properties.getProperty("phone")).sendKeys("5555555555"); // Phone
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("r_phone")).sendKeys("9999999999"); // Phone
 			Home_Pom.extentTest.log(LogStatus.INFO, "Entered phone number");
 
-			register_pom.clickFieldName(Home_Pom.properties.getProperty("city")).sendKeys("City5"); // City
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("r_city")).sendKeys("City9"); // City
 			Home_Pom.extentTest.log(LogStatus.INFO, "Entered city");
 
-			register_pom.clickFieldName(Home_Pom.properties.getProperty("country")).sendKeys("Country5"); // Country
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("r_country")).sendKeys("Country9"); // Country
 			Home_Pom.extentTest.log(LogStatus.INFO, "Entered country");
 
-			register_pom.clickFieldName(Home_Pom.properties.getProperty("password")).sendKeys("testuser5"); // Password
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("r_password")).sendKeys("testuser9"); // Password
 			Home_Pom.extentTest.log(LogStatus.INFO, "Entered password");
+			password = "testuser9";
 
-			register_pom.clickFieldName(Home_Pom.properties.getProperty("confirmPassword")).sendKeys("testuser5"); // Confirm
-																													// Password
+			register_pom.clickFieldName(Home_Pom.properties.getProperty("r_confirmPassword")).sendKeys("testuser9"); // Confirm
+																														// Password
 			Home_Pom.extentTest.log(LogStatus.INFO, "Entered confirm password");
 
 			Home_Pom.extentTest.log(LogStatus.INFO, "Entrered all the fields");
 
 			Home_Pom.extent.endTest(Home_Pom.extentTest);
 			Home_Pom.extent.flush();
+
+			users = new GetUsers(email, password);
+			users.setEmail(email);
+			users.setPassword(password);
+
+			// String fileName = System.getProperty("user.home") + "/registeredUsers.csv";
+			String fileName = "D:\\amit\\Java_programs\\Conekto-MTOPO\\src\\registered_user_data\\registeredUsers.csv";
+
+			Registered_Users.writeCsvFile(fileName);
 
 		} catch (Exception exception) {
 			Home_Pom.extentTest.log(LogStatus.ERROR, exception.getMessage());

@@ -5,15 +5,9 @@
     <classes>
       <class name="modules_automation.Register">
         <methods>
-          <include name="clickBusinessType_FashionNApparel"/>
-          <include name="clickStartButton"/>
-          <include name="clickRegisterButton"/>
-          <include name="clickNumberofStores"/>
           <include name="doRegister"/>
           <include name="afterClass"/>
-          <include name="clickNextButtonAfterSelectingBuisnessType"/>
           <include name="startUp"/>
-          <include name="clickRegister"/>
         </methods>
       </class> <!-- modules_automation.Register -->
     </classes>
