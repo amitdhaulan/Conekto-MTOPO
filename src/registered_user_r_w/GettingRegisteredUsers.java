@@ -1,9 +1,9 @@
-package registered_user;
+package registered_user_r_w;
 
-public class GetUsers {
+public class GettingRegisteredUsers {
 	String email, password;
 
-	public GetUsers(String email, String password) {
+	public GettingRegisteredUsers(String email, String password) {
 		super();
 		this.email = email;
 		this.password = password;

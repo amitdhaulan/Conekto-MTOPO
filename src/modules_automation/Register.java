@@ -17,15 +17,15 @@ import login_page_pom.Login_Pom;
 import modules_pom_registration.RegisterPOS_Pom;
 import modules_pom_registration.Register_Pom;
 import modules_pom_registration.StoresNumber_Pom;
-import registered_user.GetUsers;
-import registered_user.Registered_Users;
+import registered_user_r_w.GettingRegisteredUsers;
+import registered_user_r_w.CreatingRegisteredUsers;
 
 public class Register {
 	Login_Pom loginpom;
 	RegisterPOS_Pom registerPOS_Pom;
 	static Register_Pom register_pom;
 
-	public static GetUsers users;
+	public static GettingRegisteredUsers users;
 
 	@BeforeTest
 	public void startUp() throws FindFailed, InterruptedException, AWTException {
@@ -194,14 +194,14 @@ public class Register {
 			Home_Pom.extent.endTest(Home_Pom.extentTest);
 			Home_Pom.extent.flush();
 
-			users = new GetUsers(email, password);
+			users = new GettingRegisteredUsers(email, password);
 			users.setEmail(email);
 			users.setPassword(password);
 
 			// String fileName = System.getProperty("user.home") + "/registeredUsers.csv";
 			String fileName = "D:\\amit\\Java_programs\\Conekto-MTOPO\\src\\registered_user_data\\registeredUsers.csv";
 
-			Registered_Users.writeCsvFile(fileName);
+			CreatingRegisteredUsers.writeCsvFile(fileName);
 
 		} catch (Exception exception) {
 			Home_Pom.extentTest.log(LogStatus.ERROR, exception.getMessage());

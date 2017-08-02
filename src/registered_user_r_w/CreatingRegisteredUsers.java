@@ -1,11 +1,11 @@
-package registered_user;
+package registered_user_r_w;
 
 import java.io.FileWriter;
 import java.io.IOException;
 
 import modules_automation.Register;
 
-public class Registered_Users {
+public class CreatingRegisteredUsers {
 	// Delimiter used in CSV file
 	private static final String COMMA_DELIMITER = ",";
 	private static final String NEW_LINE_SEPARATOR = "\n";
@@ -16,7 +16,7 @@ public class Registered_Users {
 	/* creating CSV file for the registered users */
 	public static void writeCsvFile(String fileName) {
 
-		GetUsers getUsers = new GetUsers(Register.users.getEmail(), Register.users.getPassword());
+		GettingRegisteredUsers getUsers = new GettingRegisteredUsers(Register.users.getEmail(), Register.users.getPassword());
 
 		FileWriter fileWriter = null;
 
